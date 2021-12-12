@@ -16,4 +16,4 @@ with open("dict_1.json", 'w',encoding='UTF-8') as json_file:
 # In[]
 """json dump"""
 with open("dict_2.json", 'w',encoding='UTF-8') as wf:
-    json.dump(dict_example, wf)
+    json.dump(dict_example, wf, indent=4,ensure_ascii=False)
