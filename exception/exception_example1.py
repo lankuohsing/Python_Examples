@@ -7,9 +7,10 @@ Created on Tue Mar 22 16:13:02 2022
 
 person_info={"Name":"Jack","Age":20,"Gender":"Male"}
 try:
+    a=1/0
     print(person_info["Weight"])
-except KeyError:
-    print("Key Weight doesn't exist!")
+except Exception as e:
+    print("Exception happens! ",e)
 print(person_info["Age"])
 print(person_info["Gender"])
 
