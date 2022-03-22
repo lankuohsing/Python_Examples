@@ -7,10 +7,10 @@ Created on Tue Mar 22 16:13:02 2022
 
 person_info={"Name":"Jack","Age":20,"Gender":"Male"}
 try:
-    a=1/0
+#    a=1/0
     print(person_info["Weight"])
 except Exception as e:
-    print("Exception happens! ",e)
+    print("Exception happens! ",repr(e))#repr(e)的信息比较全；如果是str(e)则打印信息不全
 print(person_info["Age"])
 print(person_info["Gender"])
 
